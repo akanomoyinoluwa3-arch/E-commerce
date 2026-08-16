@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+body {
+    background-color: #ffffff;
+    color: #0b0b0b;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 32px;
+    color: #141414;
+    text-decoration: none;
+}
+.nav-features {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+.header-icons img {
+    display: block;
+}
+.cart-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Product {
+    display: flex;
+    justify-content: center;
+    padding: 60px 80px;
+}
+
+.Product-container {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    gap: 20px;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.hero-image {
+    width: 700px;
+    height: 400px;
+    overflow: visible;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+}
+
+.hero-image img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    display: flex;
+    
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    line-height: 1.0;
+    margin-bottom: 20px;
+    font-weight: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text p {
+    color: #111;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.price h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.discount {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+
+.btn-percentage {
+    background-color: #111;
+    color: #ffffff;
+    border: 2px solid #333;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-size-adjust: 20px;
+}
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.quantity {
+    width: 150px;
+    height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.quantity button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantity .minus {
+    color: #d99b50;
+}
+
+.quantity .plus {
+    color: #d99b50;
+}
+
+.quantity span {
+    font-size: 18px;
+    font-weight: 600;
+}
+.add-cart {
+    background-color: #f36c00;
+    color: #111;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.thumbnail-container img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.thumbnail-container img:hover {
+    border: 2px solid #d88942;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-images,
+    .product-details {
+        width: 100%;
+    }
+
+    .main-image {
+        width: 75%;
+    }
+
+    .thumbnail-container {
+        justify-content: flex-start;
+    }
+}
+
+/* Phone*/
+@media (max-width: 480px) {
+    .hero {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .thumbnail-container {
+        gap: 8px;
+    }
+
+    .thumbnail-container img{
+        width: 65px;
+        height: 65px;
+    }
+    .product-details {
+        width: 100%;
+    }
+}
